@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+ <tlib-version>1.2</tlib-version>
+ <short-name>ImgHelp</short-name>
+ <uri>ImageHelper</uri>
+ <function>
+  <display-name>getImagePath</display-name>
+  <name>getPath</name>
+  <function-class>de.mass.uebung1.helper.ImageHelper</function-class>
+  <function-signature>java.lang.String getImagePath(long, java.lang.String)</function-signature>
+ </function>
+</taglib>

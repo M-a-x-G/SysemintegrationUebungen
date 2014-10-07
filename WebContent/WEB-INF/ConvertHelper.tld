@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+ <tlib-version>1.2</tlib-version>
+ <short-name>conhelp</short-name>
+ <uri>ConverHelper</uri>
+ <tag>
+  <name>conhelp</name>
+  <tag-class>de.mass.uebung1.helper.ConvertHelper</tag-class>
+  <body-content>empty</body-content>
+ </tag>
+ <function>
+  <display-name>ConvertToBirthday</display-name>
+  <name>toBirthday</name>
+  <function-class>de.mass.uebung1.helper.ConvertHelper</function-class>
+  <function-signature>int getAge(java.util.Calendar)</function-signature>
+ </function>
+ <function>
+  <display-name>timeToString</display-name>
+  <name>timeToString</name>
+  <function-class>de.mass.uebung1.helper.ConvertHelper</function-class>
+  <function-signature>java.lang.String timerDisplay(long)</function-signature>
+ </function>
+</taglib>
