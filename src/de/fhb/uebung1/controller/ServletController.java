@@ -1,4 +1,4 @@
-package de.mass.uebung1.controller;
+package de.fhb.uebung1.controller;
 
 import java.io.IOException;
 
@@ -9,8 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import de.mass.uebung1.commons.HttpRequestActionBase;
-import de.mass.uebung1.commons.HttpServerletControllerBase;
+import de.fhb.uebung1.commons.HttpRequestActionBase;
+import de.fhb.uebung1.commons.HttpServerletControllerBase;
+
 
 /**
  * Servlet implementation

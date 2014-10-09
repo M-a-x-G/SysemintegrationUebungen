@@ -1,7 +1,7 @@
 /**
  *
  */
-package de.mass.uebung1.controller.actions.get;
+package de.fhb.uebung1.controller.actions.get;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
@@ -14,7 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import de.mass.uebung1.commons.HttpRequestActionBase;
+import de.fhb.uebung1.commons.HttpRequestActionBase;
+
 
 /**
  * @author Max Gregor

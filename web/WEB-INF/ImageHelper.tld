@@ -7,7 +7,7 @@
  <function>
   <display-name>getImagePath</display-name>
   <name>getPath</name>
-  <function-class>de.mass.uebung1.helper.ImageHelper</function-class>
+  <function-class>de.fhb.uebung1.helper.ImageHelper</function-class>
   <function-signature>java.lang.String getImagePath(long, java.lang.String)</function-signature>
  </function>
 </taglib>

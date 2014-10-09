@@ -1,4 +1,4 @@
-package de.mass.uebung1.commons;
+package de.fhb.uebung1.commons;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
-import de.mass.uebung1.controller.actions.get.GetMandelbrot;
+import de.fhb.uebung1.controller.actions.get.GetMandelbrot;
+
 
 /**
  * @author Max
@@ -22,7 +23,7 @@ public abstract class HttpServerletControllerBase extends HttpServlet {
     public void init(ServletConfig conf) throws ServletException {
 
         HttpRequestActionBase action = null;
-        postActions = new HashMap<String, HttpRequestActionBase>();
+        postActions = new HashMap<>();
 
 
         getActions = new HashMap<>();

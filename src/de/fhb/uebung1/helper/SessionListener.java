@@ -1,5 +1,5 @@
 
-package de.mass.uebung1.helper;
+package de.fhb.uebung1.helper;
 
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;

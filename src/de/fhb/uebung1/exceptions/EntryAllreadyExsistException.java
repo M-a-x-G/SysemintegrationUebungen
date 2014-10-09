@@ -1,4 +1,4 @@
-package de.mass.uebung1.exceptions;
+package de.fhb.uebung1.exceptions;
 
 public class EntryAllreadyExsistException extends Exception {
     private static final long serialVersionUID = 4812939732144101704L;

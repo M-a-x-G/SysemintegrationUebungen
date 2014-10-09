@@ -1,7 +1,7 @@
 /**
  * 
  */
-package de.mass.uebung1.exceptions;
+package de.fhb.uebung1.exceptions;
 
 /**
  * @author Max Gregor

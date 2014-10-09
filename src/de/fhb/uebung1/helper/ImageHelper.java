@@ -1,7 +1,7 @@
 /**
  * 
  */
-package de.mass.uebung1.helper;
+package de.fhb.uebung1.helper;
 
 import java.io.File;
 

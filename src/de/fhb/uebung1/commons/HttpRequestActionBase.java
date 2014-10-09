@@ -1,7 +1,7 @@
 /**
  * 
  */
-package de.mass.uebung1.commons;
+package de.fhb.uebung1.commons;
 
 import java.io.IOException;
 
