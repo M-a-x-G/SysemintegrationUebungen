@@ -64,7 +64,7 @@ public class GetMandelbrot extends HttpRequestActionBase {
                 baos.flush();
                 resp.setContentType("image/jpeg");
                 resp.getOutputStream().write(baos.toByteArray());
-                forward(req, resp, "protected/mandelbrot.jsp");
+//                forward(req, resp, "protected/mandelbrot.jsp");
             } else {
                 resp.sendError(HttpServletResponse.SC_EXPECTATION_FAILED);
             }

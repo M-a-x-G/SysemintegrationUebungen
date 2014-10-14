@@ -16,7 +16,7 @@ import de.fhb.uebung1.commons.HttpServerletControllerBase;
 /**
  * Servlet implementation
  */
-@WebServlet("/Mandelbrot")
+@WebServlet("/")
 public class ServletController extends HttpServerletControllerBase {
 
     /**
@@ -51,7 +51,7 @@ public class ServletController extends HttpServerletControllerBase {
         } else if (operation != null) {
             response.sendError(HttpServletResponse.SC_BAD_REQUEST);
         } else {
-            action = getActions.get("homeprofile");
+            action = getActions.get("getmandelbrot");
             action.perform(request, response);
         }
     }
