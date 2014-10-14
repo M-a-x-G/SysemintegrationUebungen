@@ -14,16 +14,6 @@
     <welcome-file-list>
         <welcome-file>ServletController</welcome-file>
     </welcome-file-list>
-    <jsp-config>
-        <taglib>
-            <taglib-uri>conhelp</taglib-uri>
-            <taglib-location>/WEB-INF/ConvertHelper.tld</taglib-location>
-        </taglib>
-        <taglib>
-            <taglib-uri>imghelp</taglib-uri>
-            <taglib-location>/WEB-INF/ImageHelper.tld</taglib-location>
-        </taglib>
-    </jsp-config>
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>All JSP Pages</web-resource-name>
