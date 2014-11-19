@@ -51,8 +51,24 @@ public class ServletController extends HttpServerletControllerBase {
         } else if (operation != null) {
             response.sendError(HttpServletResponse.SC_BAD_REQUEST);
         } else {
-            action = getActions.get("getmandelbrot");
-            action.perform(request, response);
+//            action = getActions.get("getmandelbrot");
+//            action.perform(request, response);
+            response.getOutputStream().print("<!DOCTYPE html>\n" +
+                    "<html>\n" +
+                    "<head lang=\"en\">\n" +
+                    "    <meta charset=\"UTF-8\">\n" +
+                    "    <title>MandelbrotQueue</title>\n" +
+                    "</head>\n" +
+                    "<body>\n" +
+                    "<form name=\"myWebForm\" action=\"?action=sendtoqueue\" method=\"post\">\n" +
+                    "    Email <input type=\"email\" name=\"email\" placeholder=\"email\"/><br/>\n" +
+                    "    Breite <input type=\"text\" name=\"width\" placeholder=\"Breite\"/> <br/>\n" +
+                    "    H&ouml;he <input type=\"text\" name=\"height\" placeholder=\"H&ouml;he\"/> <br/>\n" +
+                    "    Iterationen <input type=\"text\" name=\"iteration\" placeholder=\"Iterationen\"/><br/>\n" +
+                    "    <input type=\"submit\" value=\"SUBMIT\"/>\n" +
+                    "</form>\n" +
+                    "</body>\n" +
+                    "</html>");
         }
     }
 
@@ -63,15 +79,17 @@ public class ServletController extends HttpServerletControllerBase {
     protected void doPost(HttpServletRequest request,
                           HttpServletResponse response) throws ServletException, IOException {
 
-//        String operation = getOperation(request);
-//        sessionHandling(request);
-//        boolean containsKey = postActions.containsKey(operation);
-//        HttpRequestActionBase action;
+        String operation = getOperation(request);
+        sessionHandling(request);
+        boolean containsKey = postActions.containsKey(operation);
+        HttpRequestActionBase action;
+        postActions.get("sendtoqueue").perform(request,response);
 //        if (operation != null && containsKey) {
 //            action = postActions.get(operation);
 //            action.perform(request, response);
 //
-//        } else if (operation != null && operation.equalsIgnoreCase("login")) {
+//        }
+//        else if (operation != null && operation.equalsIgnoreCase("login")) {
 //            postActions.get(operation).perform(request, response);
 //        } else if (operation != null && !containsKey) {
 //            response.sendError(HttpServletResponse.SC_BAD_REQUEST);

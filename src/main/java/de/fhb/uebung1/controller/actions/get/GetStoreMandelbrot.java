@@ -27,7 +27,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import de.fhb.uebung1.commons.HttpRequestActionBase;
-import de.fhb.uebung1.helper.AWSCredentialsHelper;
+import de.fhb.uebung1.helper.CredentialHelper;
 
 
 /**
@@ -82,7 +82,7 @@ public class GetStoreMandelbrot extends HttpRequestActionBase {
                 String imageName = "image-" + UUID.randomUUID() + ".png";
                 File imageFile = new File(imageName);
                 ImageIO.write(image, "png", imageFile);
-                AWSCredentials credentials = AWSCredentialsHelper.getAWSCredentials();
+                AWSCredentials credentials = CredentialHelper.AWS_CREDENTIALS;
 
                 String bucketName = req.getParameter("bucketname");
                 if (bucketName == null || bucketName.isEmpty()) {
